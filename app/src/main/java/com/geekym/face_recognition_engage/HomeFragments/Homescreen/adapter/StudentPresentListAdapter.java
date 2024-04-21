@@ -22,7 +22,7 @@ public class StudentPresentListAdapter extends FirebaseRecyclerAdapter<PresentSt
     @SuppressLint("SetTextI18n")
     @Override
     protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull PresentStudents model) {
-        holder.Name.setText("Name: " +model.getFacultyName());
+        holder.Name.setText("Name: " +model.getName());
         holder.ID.setText("ID: " +model.getId());
         holder.Time.setText("Time: " +model.getTime());
     }
